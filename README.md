@@ -49,4 +49,16 @@ Note: depending on the size of your project, it may take some time to scan each 
 
 You can call `FindDuplicateJavaDefinitions.Scan("/path/to/some/dir")` to get a list of all class definitions and conflicts found under that directory and it's sub-directories. Useful if you want to automate this process, e.g. with Jenkins.
 
+# Supported Platforms
+
+Currently only Windows and Mac OS X are supported. It should be simple to add Linux support, being essentially identical to Mac but I don't have a Linux machine to test that out on. HMU.
+
+Developed and tested using Unity 2017.4.12f1
+
+# Dependencies
+
+You will need to have the JDK installed. This script executes a shell command (e.g. "jar tf xyz.jar") to inspect what each file contains. 
+
+You need the JDK installed to make builds for Android from Unity anyway so I'll leave that problem up to you, but you can start here https://docs.unity3d.com/Manual/android-sdksetup.html
+
 
